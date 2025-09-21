@@ -16,7 +16,7 @@ public class Precedence {
         int b = 2;
         int c = 6;
 
-        int k = b*b - (4*a*c)/(2*c);
+        int k = (b*b - 4*a*c)/(2*c);
         int t = b*b - 4*a*c/2*c;
         System.out.println(t);
         System.out.println(k);
