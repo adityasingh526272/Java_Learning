@@ -1,0 +1,19 @@
+package Basic;
+
+public class LogicalOpeartors {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 5;
+        int c = 9;
+        if (a>b && a>c){
+            System.out.println("a is greater");
+        }
+        else if (b>a || b>c) {
+            System.out.println("b is greater");
+
+        }
+        else {
+            System.out.println("c is greater");
+        }
+    }
+}
