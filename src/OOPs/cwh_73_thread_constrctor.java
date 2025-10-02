@@ -16,8 +16,8 @@ class MyThr extends Thread {
 
 public class cwh_73_thread_constrctor {
     public static void main(String[] args) {
-        MyNewThr2 t1 = new MyNewThr2("Aadi");
-        MyNewThr2 t2 = new MyNewThr2("Aadi");
+        MyThr t1 = new MyThr("Aadi");
+        MyThr t2 = new MyThr("Ankit");
         t1.start();
         t2.start();
         System.out.println("The id of the thread t is " + t1.getId());

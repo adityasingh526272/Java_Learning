@@ -17,15 +17,15 @@ class MyThr1 extends Thread {
 public class cwh_74_thread_priorities {
     public static void main(String[] args) {
         // Ready queue: T1 T2 T3 T4 T5
-        MyNewThr2 t1 = new MyNewThr2("Aadi1");
-        MyNewThr2 t2 = new MyNewThr2("Aadi2");
-        MyNewThr2 t3 = new MyNewThr2("Aadi3");
-        MyNewThr2 t4 = new MyNewThr2("Aadi4");
-        MyNewThr2 t5 = new MyNewThr2("Aadi5 (most important)");
+        MyThr t1 = new MyThr("Aadi1");
+        MyThr t2 = new MyThr("Aadi2");
+        MyThr t3 = new MyThr("Aadi3");
+        MyThr t4 = new MyThr("Aadi4");
+        MyThr t5 = new MyThr("Aadi5");
         t5.setPriority(Thread.MAX_PRIORITY);
         t1.setPriority(Thread.MIN_PRIORITY);
         t1.start();
-        t2.start();
+        t5.start();
         t3.start();
         t4.start();
         t5.start();
